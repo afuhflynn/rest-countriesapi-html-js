@@ -2,80 +2,82 @@
 <html lang="en">
 
 <head>
-    <title id="pageTitle">Rest-countries-api</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="detail.css">
+  <title id="pageTitle">Rest-countries-api</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./detail.css">
 </head>
 
 <body>
-    <div class="Maincontainer">
-        <nav id="navSection">
-            <p class="where">Where in the world?</p>
-            <div id="ChangeModes">
-                <button id="LightMode">
-                    <img src="dark_mode-removebg-preview.png" alt="LightMode" class="ModeImages"> LightMode
-                </button>
-                <button id="DarkMode"><img src="ligt_mode-removebg-preview.png" alt="DarkMode" class="ModeImages">
-                    DarkMode
-                </button>
-        </nav>
+  <div class="Maincontainer">
+    <nav id="navSection">
+      <p class="where">Where in the world?</p>
+      <div id="ChangeModes">
+        <button id="LightMode">
+          <img src="dark_mode-removebg-preview.png" alt="LightMode" class="ModeImages"> LightMode
+        </button>
+        <button id="DarkMode"><img src="ligt_mode-removebg-preview.png" alt="DarkMode" class="ModeImages">
+          DarkMode
+        </button>
+    </nav>
+  </div>
+  <div id="Section1">
+    <div id="searchbar">
+      <button id="searchbtn" type="submit">
+        <img src="search_button-removebg-preview.png" alt="submitCountryName" id="searchbtn"
+          filter="hue(100%)"></button>
+      <input type="text" id="typcountryName" placeholder="Search a country...">
     </div>
-    <div id="Section1">
-        <div id="searchbar">
-            <button id="searchbtn" type="submit">
-                <img src="search_button-removebg-preview.png" alt="submitCountryName" id="searchbtn"
-                    filter="hue(100%)"></button>
-            <input type="text" id="typcountryName" placeholder="Search a country...">
-        </div>
-        <div>
-            <select name="filtercountries" id="filterbar">
-                <option id="separateOption">Filter By Region</option>
-                <option value="Africa">Africa</option>
-                <option value="Americas">Americas</option>
-                <option value="Asia">Asia</option>
-                <option value="Europe">Europe</option>
-                <option value="Oceania">Oceania</option>
-            </select>
-        </div>
+    <div>
+      <select name="filtercountries" id="filterbar">
+        <option id="separateOption">Filter By Region</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">Americas</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+      </select>
     </div>
-    <div id="Section2">
-        <div class="container">
-        </div>
-        <div id="Details">
-            <div id="Tomainpage">
-                <button id="backButton"><span id="arrow">&LeftArrow;</span>&ThickSpace; Back</button>
+  </div>
+  <div id="Section2">
+    <div class="container">
+    </div>
+    <div id="Details">
+      <div id="Tomainpage">
+        <button id="backButton"><span id="arrow">&LeftArrow;</span>&ThickSpace; Back</button>
+      </div>
+      <div id="detailDisplay">
+        <div id="coutryFlag"><img src="" alt="countryFlag" id="coutryDetailFlag"></div>
+        <div id="mainDetails">
+          <section id="sect1">
+            <div id="leftsect">
+              <h1 id="Name"></h1>
+              <p>Native Name: <span id="nativeName"></pan>
+              </p>
+              <p>Population: <span id="Population"></span></p>
+              <p>Region: <span id="Region"></span></p>
+              <p>Sub Region: <span id="Subregion"></span></p>
+              <p>Capital: <span id="Capital"></span></p>
             </div>
-            <div id="detailDisplay">
-                <div  id="coutryFlag"><img src="" alt="countryFlag" id="coutryDetailFlag"></div>
-                <div id="mainDetails">
-                <section id="sect1"> 
-                    <div id="leftsect">
-                        <h1 id="Name"></h1>
-                        <p>Native Name: <span id="nativeName"></pan></p>
-                        <p>Population: <span id="Population"></span></p>
-                        <p>Region: <span id="Region"></span></p>
-                        <p>Sub Region: <span id="Subregion"></span></p>
-                        <p>Capital: <span id="Capital"></span></p>
-                    </div>
-                    <div id="rightsect">
-                        <p>Top LevelDomain: <span id="ToplevelD"></span></p>
-                        <p>Currencies: <span id="countryCurrencies"></span></p>
-                        <p>Languages: <span id="Languages"></span></p>
-                    </div>
-                </section>
-                    <div id="sect2">
-                        <span id="Borderlabel">Boder Countries:</span><p id="borderContainer"> <span id="Borders"></span></p>
-                    </div>
-                </div>
+            <div id="rightsect">
+              <p>Top LevelDomain: <span id="ToplevelD"></span></p>
+              <p>Currencies: <span id="countryCurrencies"></span></p>
+              <p>Languages: <span id="Languages"></span></p>
             </div>
+          </section>
+          <div id="sect2">
+            <span id="Borderlabel">Boder Countries:</span>
+            <p id="borderContainer"> <span id="Borders"></span></p>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-    <script src="jquery.js"></script>
-    <script src="index.js"></script>
-    <script src="changemode.js"></script>
-    </bod>
+  </div>
+  </div>
+  <script src="./jquery.js"></script>
+  <script src="./index.js"></script>
+  <script src="./changemode.js"></script>
+  </bod>
 
 </html>
